@@ -93,17 +93,21 @@
     <div class="container mx-auto px-4 py-8">
 	
         <!-- Cabeçalho -->
-<header class="text-center mb-12 relative">
-    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 flex items-center justify-center" style="text-shadow: 3px 3px 0 #ff9ff3, 6px 6px 0 #f368e0;">
-        <!-- Ícone da Barbie alinhado com "Para" -->
-		
-        <div class="flex items-baseline">
-            <img src="assets/barbie-icon.png" alt="Barbie" class="h-10 md:h-14 mr-2 self-center">
-    <span>Para</span>
-    <span class="mx-3">Minha</span> <!-- mx-1 adiciona espaço horizontal -->
-    <span>Princesa</span>
-    <i class="fas fa-crown ml-2 text-yellow-300"></i>
-</h1>
+<header class="text-center mb-12 relative px-4">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 flex flex-wrap items-center justify-center" style="text-shadow: 3px 3px 0 #ff9ff3, 6px 6px 0 #f368e0;">
+        <!-- Ícone + "Para" na mesma linha -->
+        <div class="flex items-center mr-1">
+            <img src="assets/barbie-icon.png" alt="Barbie" class="h-10 md:h-14 mr-2">
+            <span>Para</span>
+        </div>
+        
+        <!-- Restante do texto que pode quebrar -->
+        <div class="flex flex-wrap justify-center">
+            <span class="mx-1">minha</span>
+            <span>Princesa</span>
+            <i class="fas fa-crown ml-2 text-yellow-300"></i>
+        </div>
+    </h1>
             
             <div class="absolute -top-10 -left-10 text-6xl text-pink-200 opacity-70 heart">
                 <i class="fas fa-heart"></i>
